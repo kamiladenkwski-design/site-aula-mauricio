@@ -40,3 +40,19 @@ h2 {
 p {
     font-size: 22px;
 }
+
+.botoes-reacao {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 10px;
+}
+
+.btn-reacao {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}

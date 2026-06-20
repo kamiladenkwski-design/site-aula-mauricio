@@ -30,5 +30,25 @@ site aula prof mauricio alura
 
     </div>
 
+       <div class="botoes-reacao">
+    <button class="btn-reacao" onclick="computarReacao(this)">
+        ❤️ <span class="contador">0</span>
+    </button>
+    <button class="btn-reacao" onclick="computarReacao(this)">
+        👏 <span class="contador">0</span>
+    </button>
+</div>  <span class="contador">0</span>
+    </button>
+</div>
+<script>
+function computarReacao(botao) {
+    // Pega o número que está dentro do botão atual
+    let contadorSpan = botao.querySelector('.contador');
+    let numeroAtual = parseInt(contadorSpan.innerText);
+    
+    // Soma +1 ao número
+    contadorSpan.innerText = numeroAtual + 1;
+}
+</script>
 </body>
 </html>
