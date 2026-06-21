@@ -4,51 +4,41 @@ site aula prof mauricio alura
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
+    <title>Meu Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-
-        <header class="banner">
-            <h1>meu site para a aula do mauricio :3</h1>
-            <p>sem tema por enquanto.</p>
-        </header>
-
         <main>
-            <img src="imagens/foto.png" alt="Imagem do post" class="imagem-post">
+            
+            <article>
+                <div class="topo-site" style="background-color: #f1c9e5; padding: 20px; text-align: center; color: rgb(234, 234, 234); border-radius: 8px; margin-bottom: 20px;">
+                    <h1 style="margin: 0;">meu site para a aula do mauricio :3</h1>
+                    <p style="margin: 5px 0 0 0; opacity: 0.8;">receitas de bolo</p>
+                </div>
+                
+                <h2>Meu primeiro post</h2>
+                <p><strong>Por:</strong> Kamila Denkwski</p>
+                <p>Bem-vindo ao meu site! este é um projeto na aula de ed dig comp prog e IA, neste site vou mostrar como fazer um bolo de chocolate!</p>
+            </article>
 
-            <h2>Meu primeiro post</h2>
+            <hr style="border: 0; height: 1px; background: #ddd; margin: 40px 0;">
 
-            <p><strong>Por:</strong> Kamila Denkwski</p>
+            <article>
+                <img src="imagem.jpg" alt="Imagem do segundo post" style="max-width: 100%; height: auto;">
+                
+                <h2>Meu segundo post</h2>
+                <p><strong>Por:</strong> Kamila Denkwski</p>
+                
+                <div class="botoes-reacao" style="margin-top: 15px;">
+                    <button class="btn-reacao" onclick="computarReacao(this)">💖 <span class="contador">0</span></button>
+                    <button class="btn-reacao" onclick="computarReacao(this)">👏 <span class="contador">0</span></button>
+                </div>
+            </article>
 
-            <p>
-                Bem-vindo ao meu site! por enquanto não possui tema até que eu escolha algum!!!
-            </p>
         </main>
-
     </div>
 
-       <div class="botoes-reacao">
-    <button class="btn-reacao" onclick="computarReacao(this)">
-        ❤️ <span class="contador">0</span>
-    </button>
-    <button class="btn-reacao" onclick="computarReacao(this)">
-        👏 <span class="contador">0</span>
-    </button>
-</div>  <span class="contador">0</span>
-    </button>
-</div>
-<script>
-function computarReacao(botao) {
-    // Pega o número que está dentro do botão atual
-    let contadorSpan = botao.querySelector('.contador');
-    let numeroAtual = parseInt(contadorSpan.innerText);
-    
-    // Soma +1 ao número
-    contadorSpan.innerText = numeroAtual + 1;
-}
-</script>
 </body>
 </html>
